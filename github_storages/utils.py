@@ -13,7 +13,7 @@ def get_url(name, path, media_bucket):
 		url += str(name)
 	else:
 		url += str(media_bucket) + "/"
-
+        path = [] #for FileField
 	if len(path) != 0:
 		for folder_name in path:
 			url += str(folder_name) + "/"
